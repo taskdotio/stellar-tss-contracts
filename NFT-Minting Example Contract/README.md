@@ -13,3 +13,7 @@ Planned improvements for the txFunction is going to be making the function have 
 ## Security Concerns
 
 Prior to the creation of the txFunction, it was coined with the idea of returning some specific key however, due to the fact that the Turing Signing Servers are stateless this will not be able to be implemented in a manner that can be controlled successfully across other Turrets which hold the contract. Furthermore, the current use of a hard coded encrypted key is something that can be done relatively easily upon creation of the txFunction. The major concern that I have with this process is that if the key is compromised there is nothing that can be done to prevent endless amount of Assets/tokens being minted. While in this format there is nothing harmful that can come from an exploit like this, there is still concern to the issue of trackign asset amounts. 
+
+## Moving Forward
+
+There is more potential lined up with the txFunction, one feature that has been added in is the use of the 
