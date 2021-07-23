@@ -17,3 +17,39 @@ Prior to the creation of the txFunction, it was coined with the idea of returnin
 ## Moving Forward
 
 There is more potential lined up with the txFunction, one feature that has been added in is the use of the 
+
+
+[{"name":"source","type":"string","description":"Source account for the funds","rule":"must be a propper key"},{"name":"destination","type":"string","description":"Source account for the funds","rule":"must be a propper key"}]
+
+[
+    {
+        "name": "walletAddr",
+        "type": "string",
+        "description": "The public key address of the wallet initiating the function",
+        "rule": "Must be a Stellar public address"
+    },
+    {
+        "name": "nftCode",
+        "type": "string",
+        "description": "The code of the nft that is to be managed by the txFunction",
+        "rule": "Must be an alphanumeric value, if the provided code does not exist than an error message will be returned."
+    },
+    {
+        "name": "nftIssuer",
+        "type": "string"
+        "description": "The public key for the account that issues the nft asset that relates to the code",
+        "rule": "Must be a Stellar public address"
+    },
+    {
+        "name": "price",
+        "type": "string",
+        "description": "An integer value of the price of which the NFT is to be traded at",
+        "rule": "must be an integer value that is greater than 0 and has no more than 7 digits after the decimal"
+    },
+    {
+        "name": "quantity",
+        "type": "string",
+        "description": "An integer value of the number of the particular NFT asset that is to be traded"
+        "rule": "must be greater than 0 and not be a floating number only integers. i.e. 1, 4, 15 etc."
+    }
+]
